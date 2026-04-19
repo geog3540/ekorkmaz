@@ -170,13 +170,24 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <button class="nav-link btn btn-link p-0" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                About
+              </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
+              <a
+                class="nav-link"
+                href="file:///Users/elifkorkmaz/Desktop/tr%20belgeler/CV/Elif%20Korkmaz_CV_2026.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <button class="nav-link btn btn-link p-0" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Contact
+              </button>
             </li>
           </ul>
         </div>
@@ -334,46 +345,50 @@
       </div>
     </main>
 
-    <section id="about" class="content-section">
-      <div class="container">
-        <div class="content-panel">
-          <h2 class="section-title h3 mb-2">About</h2>
-          <p class="muted mb-0">
-            I’m Elif Korkmaz. I focus on creating clear, modern geovisualizations that
-            communicate spatial patterns effectively across devices.
-          </p>
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: rgba(7, 26, 51, 0.96); border: 1px solid rgba(185, 211, 255, 0.18);">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h5 section-title" id="aboutModalLabel">About</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="muted mb-0">
+              I’m Elif Korkmaz. I create clean, modern geovisualizations that communicate spatial patterns clearly across devices.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="resume" class="content-section">
-      <div class="container">
-        <div class="content-panel">
-          <h2 class="section-title h3 mb-2">Resume</h2>
-          <p class="muted mb-3">
-            Highlights of skills and interests. Replace this text with your real resume
-            details when ready.
-          </p>
-          <ul class="mb-0 muted">
-            <li>GIS & cartography fundamentals</li>
-            <li>Data cleaning and spatial analysis workflows</li>
-            <li>Web mapping and interactive visualization</li>
-          </ul>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: rgba(7, 26, 51, 0.96); border: 1px solid rgba(185, 211, 255, 0.18);">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h5 section-title" id="contactModalLabel">Contact</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="muted mb-2">Iowa City, IA • +1 (319) 936 2861 • <a class="link-light" href="mailto:elikrkmz@gmail.com">elikrkmz@gmail.com</a> • LinkedIn</p>
+            <p class="muted mb-3"><a class="link-light" href="mailto:elif-korkmaz@uiowa.edu">elif-korkmaz@uiowa.edu</a></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-sm btn-outline-light" href="mailto:elikrkmz@gmail.com">Email</a>
+              <a class="btn btn-sm btn-outline-light" href="mailto:elif-korkmaz@uiowa.edu">UIowa Email</a>
+              <a
+                class="btn btn-sm btn-outline-light"
+                href="file:///Users/elifkorkmaz/Desktop/tr%20belgeler/CV/Elif%20Korkmaz_CV_2026.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open Resume PDF
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="content-section">
-      <div class="container">
-        <div class="content-panel">
-          <h2 class="section-title h3 mb-2">Contact</h2>
-          <p class="muted mb-0">
-            Add your email, LinkedIn, or other links here. (This page is set up so the
-            navbar links scroll smoothly to each section.)
-          </p>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <footer class="py-4">
       <div class="container">
