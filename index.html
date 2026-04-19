@@ -170,9 +170,7 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <button class="nav-link btn btn-link p-0" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">
-                About
-              </button>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a
@@ -194,6 +192,43 @@
       </div>
     </nav>
 
+    <section id="about" class="py-5" style="background: #f8f9fa;">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4 text-center">
+            <img
+              src="about/elif_korkmaz.jpeg"
+              alt="Elif Korkmaz profile photo"
+              style="border-radius: 50%; max-width: 250px; width: 100%; height: auto; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);"
+            />
+          </div>
+          <div class="col-lg-8">
+            <h2 class="mb-1" style="color: #0a2342;">Elif Korkmaz</h2>
+            <p class="mb-3" style="color: #0a2342; opacity: 0.85;">
+              PhD Student in Geography | GIScience &amp; Multi-Hazard Vulnerability Research
+            </p>
+            <p class="mb-4" style="color: #0a2342; opacity: 0.85;">
+              I'm a PhD student in Geography at the University of Iowa. My research examines how social vulnerability interacts
+              with multi-hazard processes. Existing vulnerability frameworks are largely static and place-based — relying on
+              aggregated census data and fixed spatial units — which limits their ability to capture temporal dynamics, spatial
+              dependence, and scale-dependent variation in risk patterns under hazard events. To address these limitations, my
+              research draws on GIScience and spatial analysis methods to conceptualize vulnerability as a dynamic process that
+              evolves across disaster phases and is reshaped by spatially and/or temporally clustered hazards, with the aim of
+              better explaining cumulative risk and unequal vulnerability outcomes in multi-hazard contexts.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="about/Elif%20Korkmaz_CV_2026.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Page Content -->
     <main id="home" class="container hero">
       <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
@@ -213,7 +248,7 @@
       <div class="row g-4">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#">
+            <a href="https://observablehq.com/d/5eb6142640ad548a" target="_blank" rel="noreferrer">
               <img
                 class="card-img-top"
                 src="https://picsum.photos/700/400?random=1"
@@ -221,21 +256,26 @@
                 loading="lazy"
               />
             </a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h4 class="card-title">
-                <a href="#">Interactive Choropleth Map</a>
+                <a href="https://observablehq.com/d/5eb6142640ad548a" target="_blank" rel="noreferrer">Choropleth Mapping</a>
               </h4>
-              <p class="card-text">
-                A clean, interactive choropleth showing spatial patterns with tooltips and
-                accessible color choices.
-              </p>
+              <p class="card-text">Poverty Rate in Colorado Counties</p>
+              <a
+                class="btn btn-primary mt-auto align-self-start"
+                href="https://observablehq.com/d/5eb6142640ad548a"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Project
+              </a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#">
+            <a href="https://observablehq.com/d/aa558621fbac94f3" target="_blank" rel="noreferrer">
               <img
                 class="card-img-top"
                 src="https://picsum.photos/700/400?random=2"
@@ -243,21 +283,29 @@
                 loading="lazy"
               />
             </a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h4 class="card-title">
-                <a href="#">Story Map Layout</a>
+                <a href="https://observablehq.com/d/aa558621fbac94f3" target="_blank" rel="noreferrer">Bivariate Choropleth Mapping</a>
               </h4>
               <p class="card-text">
-                A narrative-driven map experience combining text, media, and scroll-based
-                transitions for geographic storytelling.
+                Social Vulnerability &amp; Wildfire Hazard Potential (WHP) by Census Tracts of
+                Colorado
               </p>
+              <a
+                class="btn btn-primary mt-auto align-self-start"
+                href="https://observablehq.com/d/aa558621fbac94f3"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Project
+              </a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#">
+            <a href="https://observablehq.com/d/c1b6d34057ed5d8d" target="_blank" rel="noreferrer">
               <img
                 class="card-img-top"
                 src="https://picsum.photos/700/400?random=3"
@@ -265,80 +313,19 @@
                 loading="lazy"
               />
             </a>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h4 class="card-title">
-                <a href="#">3D Terrain Visualization</a>
+                <a href="https://observablehq.com/d/c1b6d34057ed5d8d" target="_blank" rel="noreferrer">Graduated Symbol Mapping</a>
               </h4>
-              <p class="card-text">
-                A 3D terrain scene highlighting elevation and landforms with smooth camera
-                movement and legible hillshading.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#">
-              <img
-                class="card-img-top"
-                src="https://picsum.photos/700/400?random=4"
-                alt="Project preview image"
-                loading="lazy"
-              />
-            </a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Point Density & Hotspots</a>
-              </h4>
-              <p class="card-text">
-                An exploration of event clustering using density surfaces and hotspot
-                overlays to reveal where activity concentrates.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#">
-              <img
-                class="card-img-top"
-                src="https://picsum.photos/700/400?random=5"
-                alt="Project preview image"
-                loading="lazy"
-              />
-            </a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Time Series Map Animation</a>
-              </h4>
-              <p class="card-text">
-                A time-enabled visualization that animates change across space with a clear
-                timeline and consistent symbology.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#">
-              <img
-                class="card-img-top"
-                src="https://picsum.photos/700/400?random=6"
-                alt="Project preview image"
-                loading="lazy"
-              />
-            </a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Web Map Dashboard</a>
-              </h4>
-              <p class="card-text">
-                A responsive dashboard combining maps and key indicators to support
-                decision-making with quick, scannable insights.
-              </p>
+              <p class="card-text">Wildfire Hazard Potential (WHP) in Colorado Census Tracts</p>
+              <a
+                class="btn btn-primary mt-auto align-self-start"
+                href="https://observablehq.com/d/c1b6d34057ed5d8d"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Project
+              </a>
             </div>
           </div>
         </div>
